@@ -4,6 +4,7 @@ py_ver = subprocess.check_output('python -V')
 if '3.10' in str(py_ver):
     os.system('pkg upgrade python -y')
     os.system('python hop.py')
+else:pass
 current_os=subprocess.check_output('uname -om',shell=True)
 if 'aarch64' in str(current_os):
     if not os.path.isfile('h64'):
