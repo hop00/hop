@@ -1,6 +1,6 @@
 #coding=utf-8
 import os,sys,subprocess
-py_ver = subprocess.check_output('python -V')
+py_ver = subprocess.check_output('python -V',shell=True)
 if '3.10' in str(py_ver):
     os.system('pkg upgrade python -y')
     os.system('python hop.py')
